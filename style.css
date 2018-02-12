@@ -38,9 +38,10 @@ a:hover {
 
 .col-sm-8 {
     background-color: #ffffff;
-    width: 650px;
-    margin: 20px 20px 20px 0px;
-    height: 100%;
+    max-width: 650px;
+    margin: 0px 10px 0px 10px;
+    height: auto;
+    display: inline-block;
 }
 
 .mainLine {
@@ -50,7 +51,7 @@ a:hover {
     background-color: #cccccc;
 }
 
-p {
+.pull-left {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
     padding: 10px;
@@ -60,10 +61,11 @@ p {
 .col-sm-4 {
     background-color: #ffffff;
     max-width: 270px;
-    margin: 20px 0px 20px 20px;
+    display: inline-block;
+    margin: 0px 0px 0px 10px;
 }
 
-connectLine {
+.connectLine {
     border: none;
     color: #cccccc;
     height: 2px;
@@ -84,23 +86,28 @@ connectLine {
     position: absolute;
     padding: 25px;
     border-top: 10px solid #4aaaa5;
+    bottom: 0px;
 }
 
 /* --- CONTACT PAGE --- */
 
 /* Submit Button */
-input[type=submit] {
+button[type=button] {
     width: 100px;
-    background-color: #4aaaa5 !important;
+    background-color: #4aaaa5;
     color: #ffffff;
     padding: 14px 20px;
     border: none;
-    margin: 20px;
+    margin: 10px;
+    margin-left: 5px;
     clear: left;
     font-size: 12px;
 }
 
-/* -- PORTFOLIO PAGE --*/
+.form-group {
+    color: #777777;
+}
+
 .col-sm-6 {
     max-width:50%;
 }
@@ -117,11 +124,10 @@ input[type=submit] {
     height: 40px;
     position: relative;
     text-align: center;
-   
     float: left;
     position: absolute;
     top: 130px;
     width: 270px;
     padding-left: 10px;
-    margin-left: 12px;
+    margin-left: 10px;
 }
